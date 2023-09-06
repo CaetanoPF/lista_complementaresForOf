@@ -8,23 +8,24 @@
     //Entrada
 
     const pergunta = prompt(`Informe uma palavra:`).toLowerCase()
-    let palavra = [pergunta]
+    let palavra = Array.from(pergunta)
     let vogal = []
-    letconsoante = []
+    let consoante = []
 
 
     //Processamento
 
     for (let quantidade of palavra) {
-        quantidade.split("a")
-        vogal.push(quantidade)
-      
-
+       if (quantidade == 'a' || quantidade == 'e' || quantidade == 'i' || quantidade == 'o' || quantidade == 'u') {
+            vogal.push(quantidade)
+       } else {
+            consoante.push(quantidade)
+       }
     }
 
 
     //Saída
 
-    document.write(vogal)
+    document.write(`Quantidade de vogal: ${vogal.length} <br>Quantidade de consoante: ${consoante.length} `)
 
 </script>
