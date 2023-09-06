@@ -8,10 +8,24 @@
 
     //Entrada
 
+    let lista = ["A", "E", 2, 4.8, "CINQUENTA", "Araquari", 80, 10, 3.2];
+    let numero = []
+    let soma = 0
 
     //Processamento
+    for (let item of lista) {
+        if (isNaN(item)) { }
+        else {
+            numero.push(item)
+        }
+    }
+    for (let i = 0; i < numero.length; i++) {
+        soma += numero[i]
+    }
 
 
     //Saída
+
+    document.write(soma)
 
 </script>
