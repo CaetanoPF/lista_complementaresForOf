@@ -9,10 +9,28 @@
 
     //Entrada
 
+    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
+    let sc = []
+    let pr = []
+    let rs = []
 
     //Processamento
 
+    for (let estado of cidades) {
+        const pergunta = prompt(`${estado} pertence a qual estado: PR, SC ou RS`).toLowerCase()
+        if (pergunta === 'pr') {
+            pr.push(estado)
+        }
+        else if(pergunta === 'sc'){
+            sc.push(estado)
+        } 
+        else {
+            rs.push(estado)
+        }
+    }
 
     //Saída
+
+    document.write(`Cidades de SC: ${sc} <br>Cidades de RS: ${rs} <br>Cidades do PR: ${pr}`)
 
 </script>
