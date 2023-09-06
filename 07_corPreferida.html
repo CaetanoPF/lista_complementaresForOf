@@ -9,10 +9,20 @@
 
     //Entrada
 
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    let preferidas = []
 
     //Processamento
 
+    for (let verificar of cores) {
+        let usuario = prompt(`Você gosta de ${verificar}: S-Sim ou N-Não`).toLowerCase();
+        if (usuario === 's') {
+            preferidas.push(verificar)
+        }
+    }
 
     //Saída
+
+    document.write(`Cores preferidas: ${preferidas} <br> Quantidade de cores: ${preferidas.length}`)
 
 </script>
