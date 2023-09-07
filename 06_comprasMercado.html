@@ -14,18 +14,14 @@
 
     //Processamento
     for (let item of lista) {
-        if (isNaN(item)) { }
-        else {
-            numero.push(item)
+        if (isNaN(item) === false) {
+            soma = (soma + item)
         }
-    }
-    for (let i = 0; i < numero.length; i++) {
-        soma += numero[i]
     }
 
 
     //Saída
 
-    document.write(soma)
+    document.write(`O resultado da soma dos números da lista é = ${soma}`)
 
 </script>
