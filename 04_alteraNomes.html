@@ -15,7 +15,7 @@
     //Processamento
 
     for (let verificar of nomes) {
-        if (verificar.search("á") || verificar.search("é") || verificar.search("ú")) {
+        if (verificar.search("á") || verificar.search("é") || verificar.search("í") || verificar.search("ó") || verificar.search("ú")) {
             semAcento.push(verificar.replace("á", "a").replace("é", "e").replace("í","i").replace("ó","o").replace("ú", "u"))
         }
     }
