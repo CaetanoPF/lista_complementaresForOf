@@ -29,8 +29,28 @@
         }
     }
 
+    if(sc.length > pr.length && pr.length > rs.length){
+        document.write(`Cidades de SC: ${sc} <br>Cidades de RS: ${rs} <br>Cidades do PR: ${pr}`)
+    }
+    else if (sc.length > rs.length && rs.length > sc.length){
+        document.write(`Cidades de SC: ${sc} <br>Cidades de PR: ${pr} <br>Cidades do RS: ${rs}`)
+    }
+    else if (pr.length > rs.length && rs.length > sc.length){
+        document.write(`Cidades de PR: ${pr} <br>Cidades de RS: ${rs} <br>Cidades do SC: ${sc}`)
+    }
+    else if (pr.length > sc.length && sc.length > rs.length){
+        document.write(`Cidades de PR: ${pr} <br>Cidades de SC: ${sc} <br>Cidades do RS: ${rs}`)
+    }
+    else if (rs.length > sc.length && sc.length > pr.length){
+        document.write(`Cidades de RS: ${rs} <br>Cidades de SC: ${sc} <br>Cidades do PR: ${pr}`)
+    }
+    else{
+        document.write(`Cidades de SC: ${sc} <br>Cidades de RS: ${rs} <br>Cidades do PR: ${pr}`)
+    }
+
     //Saída
 
-    document.write(`Cidades de SC: ${sc} <br>Cidades de RS: ${rs} <br>Cidades do PR: ${pr}`)
+    
+    
 
 </script>
