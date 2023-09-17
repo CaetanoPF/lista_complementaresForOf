@@ -8,21 +8,18 @@
     */
 
     //Entrada
-
     let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
-    let preferidas = []
+    let favoritas = []
 
     //Processamento
-
-    for (let verificar of cores) {
-        let usuario = prompt(`Você gosta de ${verificar}: S-Sim ou N-Não`).toLowerCase();
-        if (usuario === 's') {
-            preferidas.push(verificar)
+    for (let cor of cores) {
+        let usuario = prompt(`Você gosta de ${cor} (S - Sim ou N - Não):`).toUpperCase();
+        if (usuario === 'S') {
+            favoritas.push(cor)
         }
     }
 
     //Saída
-
-    document.write(`Cores preferidas: ${preferidas} <br> Quantidade de cores: ${preferidas.length}`)
+    document.write(`Cores favoritas: ${favoritas}. <br>Quantidade de cores: ${favoritas.length}.`)
 
 </script>

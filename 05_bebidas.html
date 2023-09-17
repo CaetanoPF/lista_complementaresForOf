@@ -7,22 +7,18 @@
     */
 
     //Entrada
-
-    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"]
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
     let semAlcool = []
 
     //Processamento
-
     for (let bebida of bebidas) {
-        let pergunta = prompt(`${bebida} é álcoolico: S-Sim ou N-Não`).toLowerCase()
-        if (pergunta === 'n') {
+        let pergunta = prompt(`${bebida} é alcoólico (S - Sim ou N - Não):`).toUpperCase()
+        if (pergunta === 'N') {
             semAlcool.push(bebida)
         }
     }
 
-
     //Saída
-
-    document.write(`As bebidas para menores de 18 anos são: ${semAlcool}`);
+    document.write(`Bebidas para maiores de 18 anos: ${semAlcool}.`);
 
 </script>

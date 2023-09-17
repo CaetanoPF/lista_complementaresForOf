@@ -6,26 +6,21 @@
     */
 
     //Entrada
-
-    const pergunta = prompt(`Informe uma palavra:`).toLowerCase()
+    const pergunta = prompt(`Informe uma palavra:`).toLocaleUpperCase()
     let palavra = Array.from(pergunta)
     let vogal = []
     let consoante = []
 
-
     //Processamento
-
     for (let quantidade of palavra) {
-        if (quantidade == 'a' || quantidade == 'e' || quantidade == 'i' || quantidade == 'o' || quantidade == 'u') {
+        if (quantidade == 'A' || quantidade == 'E' || quantidade == 'I' || quantidade == 'O' || quantidade == 'U') {
             vogal.push(quantidade)
         } else {
             consoante.push(quantidade)
         }
     }
 
-
     //Saída
-
-    document.write(`Quantidade de vogal: ${vogal.length} <br>Quantidade de consoante: ${consoante.length} `)
+    document.write(`Vogal: ${vogal.length}. <br>Consoante: ${consoante.length}.`)
 
 </script>

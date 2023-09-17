@@ -1,5 +1,4 @@
 <script>
-
     //Problema: Notas do Alunos
     /*
     Considere que um aluno obteve as seguintes notas, colocadas em um array:
@@ -8,7 +7,6 @@
     */
 
     //Entrada
-
     let notasAluno = [7, 5, 9, 8];
     notasAluno.sort((a, b) => b - a)
 
@@ -17,13 +15,11 @@
     let media = 0
 
     //Processamento
-
     for (let nota of notasAluno) {
         media = (media + nota)
     }
 
-
     //Saída
-    document.write(`Maior nota = ${maiorNota} <br>Menor nota = ${menorNota} <br>Media = ${(media / notasAluno.length).toFixed(1)}`)
+    document.write(`Maior nota: ${maiorNota}. <br>Menor nota: ${menorNota}. <br>Média: ${(media / notasAluno.length).toFixed(1).replace(".", ",")}.`)
 
 </script>
